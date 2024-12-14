@@ -1,0 +1,105 @@
+import time
+
+def game():
+    #Intro... YUP
+    print("Hello Hayden, welcome to my Clue Page!")
+    print("You will get one option, to attack. Each time you attack you will vanquish an enemy to get a clue.")
+    print("Good luck with your travels!")
+
+    #How many clues?
+    counter = int(1)
+
+    #Off to the races!
+    while counter <= 9:
+        choice = input("\n Press 1 to attack the enemy: ")
+        if choice != "1":
+            print("Invalid choice! You do nothing.")
+            break
+        elif counter == 1:
+            print(f"My favorite color is Purple!")
+            counter+= 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nIn a shocking turn of events, the enemy forgot to bring a weapon!")
+            time.sleep(1)
+            print("I suppose you should take advantage of their confusion, and attack!")
+            time.sleep(2)
+        elif counter == 2:
+            print(f"I am an only child!")
+            counter += 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nUh-oh! The enemy accidently hit THEMSELVES with their club")
+            time.sleep(1)
+            print("You better attack quick, before he regains conciousness!")
+            time.sleep(2)
+        elif counter == 3:
+            print(f"My favorite stand tune, which we don't play anymore, is Loins of Satan!")
+            counter += 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nHow does this keep happening? The enemy showed up to the wrong arena.")
+            time.sleep(1)
+            print("We'll take that as a forfeit of turn, and let you attack again.")
+            time.sleep(2)
+        elif counter == 4:
+            print(f"I am a sophmore!")
+            counter += 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nI'm beginning to see a pattern here... The enemy forgot how to use a shotgun")
+            time.sleep(1)
+            print("I mean if you want another clue, you might want to attack.")
+            print("It might just be me, but don't you feel bad beating these guys up?")
+            time.sleep(2)
+        elif counter == 5:
+            print(f"My main instrument is a woodwind!")
+            counter += 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nThe enemy decided not to show up today, their feelings are hurt.")
+            time.sleep(1)
+            print("There are more clues to be found, so you might as well attack them anyways!")
+            time.sleep(2)
+        elif counter == 6:
+            print(f"My favorite type of cookies are gingersnaps!")
+            counter += 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nYou'll never guess what I'm about to say")
+            time.sleep(1)
+            print("There actually is no enemy! It's a cute little kitten(*aww*)")
+            time.sleep(1)
+            print("But wait! What's that? Could it be... the evil Larry cat?")
+            time.sleep(2)
+        elif counter == 7:
+            print(f"Cats > Dogs(I actually own two cats!)\n(They don't live in Bloomington though :( )")
+            counter += 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nWow you sure are great at attacking!")
+            time.sleep(1)
+            print("We could always try to get along, and stop fighting.")
+            time.sleep(2)
+        elif counter == 8:
+            print(f"I am a double major!")
+            counter += 1
+            print("\nEnemy's turn...")
+            time.sleep(1)  # Pause for dramatic effect
+            print("\nI suppose you couldn't get any more clues then could you...")
+            time.sleep(1)
+            print("It looks like the enemy has given up, here is your chance!")
+            time.sleep(2)
+        elif counter == 9:
+            print(f"My hometown is located in the Southern US!")
+            counter += 1
+            time.sleep(1)
+            print("It looks like that was the last enemy! There are no clues left.")
+            time.sleep(3)
+
+    #Ending comments!
+    print(f"\nCongrats on finishing your clue page!\nI hope that you enjoyed playing, and I can't wait to meet you!")
+    print("I apologize for my rudimentary game, finals week has taken away my time I'm afraid.")
+
+if __name__ == "__main__":
+    game()
